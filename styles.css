@@ -1,0 +1,172 @@
+@font-face {
+    font-family: "Spartan";
+    src: url("https://fonts.google.com/specimen/Spartan") format("ttf"),
+}
+
+html, body {
+    height: 100%;
+    overflow: hidden;
+}
+
+p {
+    font-family: "Spartan", serif;
+}
+
+#backgroundTop {
+    position: fixed;
+    top: 0;
+    left: 0;
+}
+
+#backgroundBottom {
+    position: fixed;
+    bottom: 0;
+    right: 0;
+}
+
+.container {
+    width: 100%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.wrapper {
+    width: 100%;
+    max-width: 1100px;
+    display: flex;
+    flex-direction: column;
+}
+
+.topContent {
+    display: flex;
+    flex-direction: row;
+}
+
+.titles {
+    max-width: 31rem;
+} 
+
+
+h1 {
+    font-family: "Spartan";
+    font-weight: 700;
+    color: hsl(300, 43%, 22%);
+    max-width: 22rem;
+}
+
+h2 {
+    font-family: "Spartan";
+    font-size: 1rem;
+    font-weight: 300;
+    color: hsl(303, 10%, 53%); 
+}
+
+.rates {
+    display: flex;
+    flex-direction: column;
+    margin-top: 2rem;
+    margin-left: 8rem;
+    align-items: center;
+}
+
+.rate {
+    display: flex;
+    width: 100%;
+    align-items: center;
+    background-color: hsl(300, 24%, 96%);
+    padding: 0.3rem 1rem 0.3rem 1rem;
+    border-radius: 0.5rem;
+    margin-bottom: 1rem;
+}
+
+.rate:nth-child(2) {
+    transform: translateX(2rem);
+}
+
+.rate:nth-child(3) {
+    transform: translateX(4rem);
+}
+
+.stars {
+    display: inline;
+    margin-right: 1rem;
+}
+
+.rate > p {
+    display: inline;
+    font-weight: 700;
+    font-size: 0.8rem;
+    color: hsl(300, 43%, 22%);
+}
+
+.cards {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    margin-top: 3rem;
+}
+
+.card {
+    background-color: hsl(300, 43%, 22%);
+    border-radius: 0.5rem;
+    padding: 1rem 1.5rem 1rem 1.5rem;
+    max-width: 17rem;
+}
+
+.card:nth-child(2) {
+    transform: translateY(1rem);
+}
+
+.card:nth-child(3) {
+    transform: translateY(2rem);
+}
+
+
+.cardTop {
+    display: flex;
+    align-items: center;
+}
+
+.avatar {
+    border-radius: 50%;
+    width: 10%;
+    height: 10%;
+}
+
+.infos {
+    display: flex;
+    flex-direction: column;
+    margin-left: 1rem;
+}
+
+.cardName {
+    color:white;
+    font-size: 1rem;
+    margin-bottom: -1.7rem;
+}
+
+.cardStatus {
+    color: hsl(333, 80%, 67%);
+    font-size: 0.8rem
+}
+
+.cardComment {
+    margin-top: 1rem;
+    color: white;
+    font-size: 0.7rem;
+    line-height: 1.2rem;
+}
+
+.attribution {
+    position: fixed;
+    bottom: 0;
+    font-size: 11px;
+    text-align: center;
+    font-family: "Spartan";
+}
+
+.attribution a {
+    color: hsl(228, 45%, 44%);
+}
