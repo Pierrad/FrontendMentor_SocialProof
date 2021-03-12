@@ -170,3 +170,73 @@ h2 {
 .attribution a {
     color: hsl(228, 45%, 44%);
 }
+
+
+@media (max-width: 375px) {
+    html, body {
+        overflow: visible;
+    }
+
+    .wrapper {
+        height: 100%;
+    }
+
+    .topContent {
+        flex-direction: column;
+    }
+
+    .titles {
+        padding: 0rem 0.5rem;
+        margin-bottom: 1rem;
+    }
+
+    h1 {
+        text-align: center;
+    }
+
+    h2 {
+        text-align: center;
+    }
+
+    .rates {
+        margin: 0rem 1rem;
+    }
+
+    .rate {
+        flex-direction: column;
+        border-radius: 1rem;
+        padding: 0;
+    }
+
+    .rate:nth-child(2) {
+        transform: translateX(0);
+    }
+    
+    .rate:nth-child(3) {
+        transform: translateX(0);
+    }
+
+    .stars {
+        margin-top: 1rem;
+    }
+
+    .cards {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .card {
+        padding: 1rem 2rem;
+        border-radius: 0.5rem;
+        margin-bottom: 2rem;
+    }
+
+    .card:nth-child(2) {
+        transform: translateY(0);
+    }
+
+    .card:nth-child(3) {
+        transform: translateY(0);
+    }
+    
+}
